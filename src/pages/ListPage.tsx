@@ -4,12 +4,18 @@ import { Job } from '../types';
 import { fetchJobs } from '../services/jobService';
 import JobCard from '../components/JobCard';
 import SkeletonCard from '../components/SkeletonCard';
+import JobModal from '../components/JobModal';
 import { useFavorites } from '../context/FavoritesContext';
 
 export const ListPage: React.FC = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [searchParams, setSearchParams] = useSearchParams();
+
+  // State quản lý Modal xem nhanh
+  const [selectedJob, setSelectedJob] = useState<Job | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [triggerElement, setTriggerElement] = useState<HTMLElement | null>(null);
 
   const { isFavorite, favoriteCount } = useFavorites();
 
@@ -37,6 +43,18 @@ export const ListPage: React.FC = () => {
     } else {
       setSearchParams({});
     }
+  };
+
+  // Mở modal xem nhanh và ghi nhớ nút đã bấm để trả focus khi đóng
+  const handleQuickView = (job: Job, trigger: HTMLElement) => {
+    setSelectedJob(job);
+    setTriggerElement(trigger);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedJob(null);
   };
 
   // Lọc danh sách việc làm hiển thị theo lựa chọn
@@ -170,11 +188,20 @@ export const ListPage: React.FC = () => {
               <JobCard
                 key={job.id}
                 job={job}
+                onQuickView={handleQuickView}
               />
             ))}
           </div>
         )}
       </section>
+
+      {/* Modal chi tiết (ESC, bẫy focus, đóng click nền, khóa cuộn) */}
+      <JobModal
+        job={selectedJob}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        triggerElement={triggerElement}
+      />
     </div>
   );
 };

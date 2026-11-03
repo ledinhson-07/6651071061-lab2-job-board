@@ -6,7 +6,7 @@ import { useFavorites } from '../context/FavoritesContext';
 
 interface JobCardProps {
   job: Job;
-  onQuickView?: (job: Job) => void;
+  onQuickView?: (job: Job, triggerElement: HTMLElement) => void;
 }
 
 export const JobCard: React.FC<JobCardProps> = ({ job, onQuickView }) => {
@@ -147,7 +147,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, onQuickView }) => {
           {onQuickView && (
             <button
               type="button"
-              onClick={() => onQuickView(job)}
+              onClick={(e) => onQuickView(job, e.currentTarget)}
               className="text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
             >
               Xem nhanh
