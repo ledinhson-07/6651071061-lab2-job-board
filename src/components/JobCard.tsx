@@ -6,10 +6,11 @@ import { useFavorites } from '../context/FavoritesContext';
 
 interface JobCardProps {
   job: Job;
+  priority?: boolean;
   onQuickView?: (job: Job, triggerElement: HTMLElement) => void;
 }
 
-export const JobCard: React.FC<JobCardProps> = ({ job, onQuickView }) => {
+export const JobCard: React.FC<JobCardProps> = ({ job, priority = false, onQuickView }) => {
   const { isFavorite, toggleFavorite } = useFavorites();
   const favorited = isFavorite(job.id);
 
@@ -23,7 +24,9 @@ export const JobCard: React.FC<JobCardProps> = ({ job, onQuickView }) => {
             alt={job.logoAlt}
             width={48}
             height={48}
-            loading="lazy"
+            loading={priority ? 'eager' : 'lazy'}
+            fetchPriority={priority ? 'high' : 'auto'}
+            decoding="async"
             className="w-12 h-12 rounded-lg object-contain bg-slate-50 border border-slate-100 p-1 flex-shrink-0"
           />
           <div>
