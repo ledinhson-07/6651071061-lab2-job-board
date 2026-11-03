@@ -2,20 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Job } from '../types';
 import { formatCurrency, truncateText } from '../utils';
+import { useFavorites } from '../context/FavoritesContext';
 
 interface JobCardProps {
   job: Job;
-  isFavorite?: boolean;
-  onToggleFavorite?: (id: number) => void;
   onQuickView?: (job: Job) => void;
 }
 
-export const JobCard: React.FC<JobCardProps> = ({
-  job,
-  isFavorite = false,
-  onToggleFavorite,
-  onQuickView,
-}) => {
+export const JobCard: React.FC<JobCardProps> = ({ job, onQuickView }) => {
+  const { isFavorite, toggleFavorite } = useFavorites();
+  const favorited = isFavorite(job.id);
+
   return (
     <article className="flex flex-col bg-white rounded-xl border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200 p-5 relative group">
       {/* Header card: Logo, thông tin công ty và nút yêu thích */}
@@ -59,24 +56,24 @@ export const JobCard: React.FC<JobCardProps> = ({
           </div>
         </div>
 
-        {/* Nút lưu yêu thích */}
+        {/* Nút lưu yêu thích (Favorites) */}
         <button
           type="button"
-          onClick={() => onToggleFavorite && onToggleFavorite(job.id)}
+          onClick={() => toggleFavorite(job.id)}
           aria-label={
-            isFavorite
+            favorited
               ? `Bỏ lưu tin tuyển dụng ${job.title} tại ${job.company}`
               : `Lưu tin tuyển dụng ${job.title} tại ${job.company}`
           }
-          aria-pressed={isFavorite}
+          aria-pressed={favorited}
           className={`p-2 rounded-lg border transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600 ${
-            isFavorite
+            favorited
               ? 'bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100'
               : 'bg-slate-50 border-slate-200 text-slate-400 hover:text-rose-600 hover:bg-slate-100'
           }`}
         >
           <svg
-            className={`w-5 h-5 ${isFavorite ? 'fill-current' : 'fill-none'}`}
+            className={`w-5 h-5 ${favorited ? 'fill-current' : 'fill-none'}`}
             stroke="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
