@@ -3,21 +3,16 @@ import { useParams, Link } from 'react-router-dom';
 import { Job } from '../types';
 import { fetchJobById } from '../services/jobService';
 import { formatCurrency } from '../utils';
+import { useFavorites } from '../context/FavoritesContext';
 import SkeletonDetail from '../components/SkeletonDetail';
 
-interface DetailPageProps {
-  favoriteIds?: number[];
-  onToggleFavorite?: (id: number) => void;
-}
-
-export const DetailPage: React.FC<DetailPageProps> = ({
-  favoriteIds = [],
-  onToggleFavorite,
-}) => {
+export const DetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [job, setJob] = useState<Job | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [applied, setApplied] = useState<boolean>(false);
+
+  const { isFavorite, toggleFavorite } = useFavorites();
 
   useEffect(() => {
     let isMounted = true;
@@ -75,7 +70,7 @@ export const DetailPage: React.FC<DetailPageProps> = ({
     );
   }
 
-  const isFavorite = favoriteIds.includes(job.id);
+  const favorited = isFavorite(job.id);
 
   return (
     <article aria-labelledby="job-title" className="space-y-6">
@@ -130,21 +125,21 @@ export const DetailPage: React.FC<DetailPageProps> = ({
             {/* Nút lưu yêu thích */}
             <button
               type="button"
-              onClick={() => onToggleFavorite && onToggleFavorite(job.id)}
+              onClick={() => toggleFavorite(job.id)}
               aria-label={
-                isFavorite
+                favorited
                   ? `Bỏ lưu tin tuyển dụng ${job.title} tại ${job.company}`
                   : `Lưu tin tuyển dụng ${job.title} tại ${job.company}`
               }
-              aria-pressed={isFavorite}
+              aria-pressed={favorited}
               className={`p-2.5 rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600 ${
-                isFavorite
+                favorited
                   ? 'bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100'
                   : 'bg-slate-50 border-slate-200 text-slate-500 hover:text-rose-600 hover:bg-slate-100'
               }`}
             >
               <svg
-                className={`w-5 h-5 ${isFavorite ? 'fill-current' : 'fill-none'}`}
+                className={`w-5 h-5 ${favorited ? 'fill-current' : 'fill-none'}`}
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

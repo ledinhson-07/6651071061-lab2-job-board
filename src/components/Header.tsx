@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useFavorites } from '../context/FavoritesContext';
 
-interface HeaderProps {
-  favoriteCount?: number;
-}
+export const Header: React.FC = () => {
+  const { favoriteCount } = useFavorites();
 
-export const Header: React.FC<HeaderProps> = ({ favoriteCount = 0 }) => {
   return (
     <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ favoriteCount = 0 }) => {
           </Link>
 
           {/* Navigation */}
-          <nav aria-label="Điều hướng chính" className="flex items-center gap-4">
+          <nav aria-label="Điều hướng chính" className="flex items-center gap-3 sm:gap-4">
             <Link
               to="/"
               className="text-sm font-semibold text-slate-700 hover:text-emerald-700 px-3 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
@@ -37,10 +36,11 @@ export const Header: React.FC<HeaderProps> = ({ favoriteCount = 0 }) => {
               Việc làm
             </Link>
 
-            {/* Mục yêu thích */}
-            <div
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 text-sm font-semibold"
-              aria-label={`Tin đã lưu: ${favoriteCount} tin`}
+            {/* Mục yêu thích kèm số lượng đã lưu */}
+            <Link
+              to="/?saved=true"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              aria-label={`Xem danh sách tin đã lưu, hiện có ${favoriteCount} tin`}
             >
               <svg
                 className="w-4 h-4 text-emerald-700 fill-current"
@@ -53,14 +53,14 @@ export const Header: React.FC<HeaderProps> = ({ favoriteCount = 0 }) => {
                   clipRule="evenodd"
                 />
               </svg>
-              <span>Đã lưu</span>
+              <span className="hidden sm:inline">Đã lưu</span>
               <span
                 className="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-xs font-bold rounded-full bg-emerald-700 text-white"
                 aria-hidden="true"
               >
                 {favoriteCount}
               </span>
-            </div>
+            </Link>
           </nav>
         </div>
       </div>
