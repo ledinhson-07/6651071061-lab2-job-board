@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Job } from '../types';
 import { fetchJobs } from '../services/jobService';
 import JobCard from '../components/JobCard';
+import SkeletonCard from '../components/SkeletonCard';
 
 export const ListPage: React.FC = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
@@ -9,6 +10,7 @@ export const ListPage: React.FC = () => {
 
   useEffect(() => {
     let isMounted = true;
+    setIsLoading(true);
     fetchJobs().then((data) => {
       if (isMounted) {
         setJobs(data);
@@ -43,7 +45,9 @@ export const ListPage: React.FC = () => {
         {/* Thống kê nhanh */}
         <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap items-center gap-6 text-sm text-slate-600">
           <div>
-            <span className="font-bold text-slate-900">{jobs.length}</span> tin tuyển dụng hiện có
+            <span className="font-bold text-slate-900">
+              {isLoading ? '...' : jobs.length}
+            </span> tin tuyển dụng hiện có
           </div>
           <div>
             Địa điểm: <span className="font-medium text-slate-900">TP.HCM, Hà Nội, Đà Nẵng</span>
@@ -51,14 +55,27 @@ export const ListPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Danh sách tin tuyển dụng */}
-      <section aria-label="Danh sách việc làm">
+      {/* Danh sách tin tuyển dụng có hiệu ứng Skeleton loading */}
+      <section
+        aria-label="Danh sách việc làm"
+        aria-busy={isLoading}
+      >
         {isLoading ? (
-          <div className="py-12 text-center text-slate-500">
-            Đang tải danh sách việc làm...
+          <div>
+            {/* Thông báo cho trình đọc màn hình */}
+            <p className="sr-only" role="status">
+              Đang tải danh sách việc làm, vui lòng chờ...
+            </p>
+
+            {/* Lưới SkeletonCard: khớp kích thước và đúng 3 breakpoint (1/2/3 cột) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {Array.from({ length: 6 }).map((_, index) => (
+                <SkeletonCard key={index} />
+              ))}
+            </div>
           </div>
         ) : (
-          /* Lưới responsive 3 mức: < 640px (1 cột), 640-1024px (2 cột), > 1024px (3 cột) */
+          /* Lưới tin tuyển dụng thật khi đã tải xong */
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {jobs.map((job) => (
               <JobCard
