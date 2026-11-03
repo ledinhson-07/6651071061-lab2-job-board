@@ -5,11 +5,11 @@ import { Job } from '../types';
 const jobs: Job[] = rawJobData as Job[];
 
 /**
- * Giả lập gọi API bất đồng bộ lấy danh sách tin tuyển dụng với độ trễ 800–1200ms
- * Giúp kích hoạt hiệu ứng Skeleton Loading chân thực
+ * Giả lập gọi API bất đồng bộ lấy danh sách tin tuyển dụng với độ trễ hợp lý
+ * Kích hoạt hiệu ứng Skeleton Loading chân thực và tối ưu tốc độ phản hồi LCP
  */
 export function fetchJobs(): Promise<Job[]> {
-  const delay = Math.floor(Math.random() * 400) + 800;
+  const delay = 450;
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve([...jobs]);
@@ -21,7 +21,7 @@ export function fetchJobs(): Promise<Job[]> {
  * Giả lập gọi API bất đồng bộ lấy chi tiết một tin tuyển dụng theo id
  */
 export function fetchJobById(id: number): Promise<Job | null> {
-  const delay = Math.floor(Math.random() * 400) + 800;
+  const delay = 450;
   return new Promise((resolve) => {
     setTimeout(() => {
       const found = jobs.find((job) => job.id === id);

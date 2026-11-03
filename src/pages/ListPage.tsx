@@ -184,10 +184,11 @@ export const ListPage: React.FC = () => {
         ) : (
           /* Lưới tin tuyển dụng thật: < 640px 1 cột, 640-1024px 2 cột, > 1024px 3 cột */
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {displayedJobs.map((job) => (
+            {displayedJobs.map((job, idx) => (
               <JobCard
                 key={job.id}
                 job={job}
+                priority={idx < 2}
                 onQuickView={handleQuickView}
               />
             ))}
