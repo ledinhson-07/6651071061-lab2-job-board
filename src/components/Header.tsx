@@ -6,13 +6,13 @@ export const Header: React.FC = () => {
   const { favoriteCount } = useFavorites();
 
   return (
-    <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200 border-t-4 border-brand shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo & Tên dự án */}
           <Link
             to="/"
-            className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-emerald-600 rounded-lg p-1"
+            className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand rounded-lg p-1"
           >
             <div className="w-10 h-10 rounded-xl bg-emerald-700 text-white flex items-center justify-center font-bold text-lg shadow-sm group-hover:bg-emerald-800 transition-colors">
               JB
@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
           <nav aria-label="Điều hướng chính" className="flex items-center gap-3 sm:gap-4">
             <Link
               to="/"
-              className="text-sm font-semibold text-slate-700 hover:text-emerald-700 px-3 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              className="text-sm font-semibold text-slate-700 hover:text-emerald-700 px-3 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand"
             >
               Việc làm
             </Link>
@@ -39,11 +39,11 @@ export const Header: React.FC = () => {
             {/* Mục yêu thích kèm số lượng đã lưu */}
             <Link
               to="/?saved=true"
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand"
               aria-label={`Xem danh sách tin đã lưu, hiện có ${favoriteCount} tin`}
             >
               <svg
-                className="w-4 h-4 text-emerald-700 fill-current"
+                className="w-4 h-4 text-brand fill-current"
                 viewBox="0 0 20 20"
                 aria-hidden="true"
               >

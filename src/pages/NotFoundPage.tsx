@@ -29,7 +29,7 @@ export const NotFoundPage: React.FC = () => {
       <div className="mt-6">
         <Link
           to="/"
-          className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
+          className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand"
         >
           Quay lại trang chủ
         </Link>

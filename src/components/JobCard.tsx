@@ -15,7 +15,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, priority = false, onQuick
   const favorited = isFavorite(job.id);
 
   return (
-    <article className="flex flex-col bg-white rounded-xl border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200 p-5 relative group">
+    <article className="flex flex-col bg-white rounded-xl border border-slate-200 hover:border-brand shadow-sm hover:shadow-md transition-all duration-200 p-5 relative group">
       {/* Header card: Logo, thông tin công ty và nút yêu thích */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
@@ -25,7 +25,6 @@ export const JobCard: React.FC<JobCardProps> = ({ job, priority = false, onQuick
             width={48}
             height={48}
             loading={priority ? 'eager' : 'lazy'}
-            fetchPriority={priority ? 'high' : 'auto'}
             decoding="async"
             className="w-12 h-12 rounded-lg object-contain bg-slate-50 border border-slate-100 p-1 flex-shrink-0"
           />
@@ -69,10 +68,10 @@ export const JobCard: React.FC<JobCardProps> = ({ job, priority = false, onQuick
               : `Lưu tin tuyển dụng ${job.title} tại ${job.company}`
           }
           aria-pressed={favorited}
-          className={`p-2 rounded-lg border transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600 ${
+          className={`p-2 rounded-lg border transition-colors focus:outline-none focus:ring-2 focus:ring-brand ${
             favorited
               ? 'bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100'
-              : 'bg-slate-50 border-slate-200 text-slate-400 hover:text-rose-600 hover:bg-slate-100'
+              : 'bg-slate-50 border-slate-200 text-slate-500 hover:text-rose-600 hover:bg-slate-100'
           }`}
         >
           <svg
@@ -104,7 +103,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, priority = false, onQuick
       {/* Mức lương nổi bật */}
       <div className="mt-2 text-sm font-bold text-emerald-700 flex items-center gap-1.5">
         <svg
-          className="w-4 h-4 text-emerald-700 flex-shrink-0"
+          className="w-4 h-4 text-brand flex-shrink-0"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -151,7 +150,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, priority = false, onQuick
             <button
               type="button"
               onClick={(e) => onQuickView(job, e.currentTarget)}
-              className="text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              className="text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-brand"
             >
               Xem nhanh
             </button>
@@ -159,7 +158,7 @@ export const JobCard: React.FC<JobCardProps> = ({ job, priority = false, onQuick
 
           <Link
             to={`/item/${job.id}`}
-            className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-emerald-600"
+            className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand"
           >
             Chi tiết
           </Link>

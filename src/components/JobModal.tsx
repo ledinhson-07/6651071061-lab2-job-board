@@ -19,11 +19,18 @@ export const JobModal: React.FC<JobModalProps> = ({
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const onCloseRef = useRef(onClose);
+  const isOpenRef = useRef(isOpen);
   const { isFavorite, toggleFavorite } = useFavorites();
+
+  onCloseRef.current = onClose;
+  isOpenRef.current = isOpen;
+
+  const jobId = job?.id;
 
   // BẪY FOCUS (Focus Trap), phím ESC và khóa cuộn nền (Scroll Lock)
   useEffect(() => {
-    if (!isOpen || !job) return;
+    if (!isOpen || jobId === undefined) return;
 
     // 1. Khóa cuộn trang nền khi mở modal
     const originalOverflow = document.body.style.overflow;
@@ -39,7 +46,7 @@ export const JobModal: React.FC<JobModalProps> = ({
       // Đóng modal khi nhấn phím Escape (ESC)
       if (e.key === 'Escape') {
         e.preventDefault();
-        onClose();
+        onCloseRef.current();
         return;
       }
 
@@ -53,6 +60,16 @@ export const JobModal: React.FC<JobModalProps> = ({
 
         const firstElement = focusableElements[0];
         const lastElement = focusableElements[focusableElements.length - 1];
+
+        // Nếu document.activeElement không nằm trong modal khi bấm Tab thì focus vào phần tử đầu tiên của modal
+        if (
+          document.activeElement instanceof Node &&
+          !modalRef.current.contains(document.activeElement)
+        ) {
+          e.preventDefault();
+          firstElement.focus();
+          return;
+        }
 
         if (e.shiftKey) {
           // Khi nhấn Shift + Tab tại phần tử đầu tiên -> chuyển focus về phần tử cuối
@@ -78,12 +95,12 @@ export const JobModal: React.FC<JobModalProps> = ({
       document.body.style.overflow = originalOverflow;
       window.removeEventListener('keydown', handleKeyDown);
 
-      // 4. Trả tiêu điểm (focus) về nút đã kích hoạt mở modal
-      if (triggerElement) {
+      // 4. Chỉ trả tiêu điểm (focus) về triggerElement khi modal thật sự đóng
+      if (!isOpenRef.current && triggerElement) {
         triggerElement.focus();
       }
     };
-  }, [isOpen, job, onClose, triggerElement]);
+  }, [isOpen, jobId, triggerElement]);
 
   if (!isOpen || !job) {
     return null;
@@ -95,7 +112,7 @@ export const JobModal: React.FC<JobModalProps> = ({
     <div
       role="presentation"
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-sm animate-fade-in motion-reduce:animate-none"
     >
       {/* Hộp thoại Dialog */}
       <div
@@ -115,7 +132,7 @@ export const JobModal: React.FC<JobModalProps> = ({
               alt={job.logoAlt}
               width={52}
               height={52}
-              className="w-13 h-13 rounded-xl object-contain bg-white border border-slate-200 p-1.5 flex-shrink-0 shadow-sm"
+              className="w-[52px] h-[52px] rounded-xl object-contain bg-white border border-slate-200 p-1.5 flex-shrink-0 shadow-sm"
             />
             <div>
               <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
@@ -128,9 +145,9 @@ export const JobModal: React.FC<JobModalProps> = ({
                 {job.title}
               </h2>
               <div className="flex items-center gap-2 mt-1 text-xs text-slate-600">
-                <span>📍 {job.location}</span>
+                <span><span aria-hidden="true">📍</span> {job.location}</span>
                 <span>•</span>
-                <span>📅 Đăng ngày: {job.postedDate}</span>
+                <span><span aria-hidden="true">📅</span> Đăng ngày: {job.postedDate}</span>
               </div>
             </div>
           </div>
@@ -146,10 +163,10 @@ export const JobModal: React.FC<JobModalProps> = ({
                   : `Lưu tin tuyển dụng ${job.title}`
               }
               aria-pressed={favorited}
-              className={`p-2 rounded-lg border transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600 ${
+              className={`p-2 rounded-lg border transition-colors focus:outline-none focus:ring-2 focus:ring-brand ${
                 favorited
                   ? 'bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100'
-                  : 'bg-white border-slate-200 text-slate-400 hover:text-rose-600 hover:bg-slate-50'
+                  : 'bg-white border-slate-200 text-slate-500 hover:text-rose-600 hover:bg-slate-50'
               }`}
             >
               <svg
@@ -173,7 +190,7 @@ export const JobModal: React.FC<JobModalProps> = ({
               type="button"
               onClick={onClose}
               aria-label="Đóng cửa sổ chi tiết việc làm"
-              className="p-2 rounded-lg border border-slate-200 text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              className="p-2 rounded-lg border border-slate-200 text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-brand"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -252,7 +269,7 @@ export const JobModal: React.FC<JobModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-200/70 rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+            className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-200/70 rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-brand"
           >
             Đóng
           </button>
@@ -260,7 +277,7 @@ export const JobModal: React.FC<JobModalProps> = ({
           <Link
             to={`/item/${job.id}`}
             onClick={onClose}
-            className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 rounded-xl transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
+            className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 rounded-xl transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand"
           >
             <span>Xem trang đầy đủ</span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

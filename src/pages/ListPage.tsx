@@ -67,7 +67,7 @@ export const ListPage: React.FC = () => {
       {/* Banner giới thiệu & Thống kê */}
       <section
         aria-labelledby="jobs-heading"
-        className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm"
+        className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 border-l-4 border-l-brand shadow-sm"
       >
         <div className="max-w-2xl">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 mb-3">
@@ -77,7 +77,7 @@ export const ListPage: React.FC = () => {
             Khám phá việc làm hấp dẫn nhất
           </h1>
           <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Hơn 20+ vị trí tuyển dụng đa ngành nghề từ các doanh nghiệp công nghệ, tài chính và dịch vụ hàng đầu tại Việt Nam.
+            Hơn 20 vị trí tuyển dụng đa ngành nghề từ các doanh nghiệp công nghệ, tài chính và dịch vụ hàng đầu tại Việt Nam.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export const ListPage: React.FC = () => {
             <button
               type="button"
               onClick={() => handleToggleFilter(false)}
-              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600 ${
+              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand ${
                 !showSavedOnly
                   ? 'bg-emerald-700 text-white shadow-sm'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
@@ -99,7 +99,7 @@ export const ListPage: React.FC = () => {
               type="button"
               onClick={() => handleToggleFilter(true)}
               aria-pressed={showSavedOnly}
-              className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600 ${
+              className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand ${
                 showSavedOnly
                   ? 'bg-emerald-700 text-white shadow-sm'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
@@ -175,7 +175,7 @@ export const ListPage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => handleToggleFilter(false)}
-                className="inline-flex items-center px-4 py-2 rounded-xl text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                className="inline-flex items-center px-4 py-2 rounded-xl text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-brand"
               >
                 Xem tất cả việc làm
               </button>

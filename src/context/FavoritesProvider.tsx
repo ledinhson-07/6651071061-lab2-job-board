@@ -3,6 +3,7 @@ import {
   FavoritesContext,
   favoritesReducer,
   loadFavoritesFromStorage,
+  saveFavoritesToStorage,
   STORAGE_KEY,
 } from './FavoritesContext';
 
@@ -17,6 +18,11 @@ export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({ children }
   const [state, dispatch] = useReducer(favoritesReducer, {
     favorites: loadFavoritesFromStorage(),
   });
+
+  // Đồng bộ danh sách yêu thích vào localStorage mỗi khi state.favorites thay đổi
+  useEffect(() => {
+    saveFavoritesToStorage(state.favorites);
+  }, [state.favorites]);
 
   // Lắng nghe sự kiện storage để đồng bộ nếu người dùng mở trên nhiều tab
   useEffect(() => {

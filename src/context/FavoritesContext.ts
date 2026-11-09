@@ -42,7 +42,7 @@ export type FavoritesAction =
   | { type: 'SET_FAVORITES'; payload: number[] };
 
 /**
- * Reducer quản lý cập nhật danh sách yêu thích
+ * Reducer thuần túy quản lý cập nhật danh sách yêu thích
  */
 export function favoritesReducer(state: FavoritesState, action: FavoritesAction): FavoritesState {
   switch (action.type) {
@@ -53,7 +53,6 @@ export function favoritesReducer(state: FavoritesState, action: FavoritesAction)
         ? state.favorites.filter((favId) => favId !== id)
         : [...state.favorites, id];
 
-      saveFavoritesToStorage(newFavorites);
       return { favorites: newFavorites };
     }
     case 'SET_FAVORITES': {

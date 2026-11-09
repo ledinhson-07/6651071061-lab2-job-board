@@ -9,7 +9,7 @@
     "jobType": "Full-time",
     "level": "Senior",
     "category": "IT - Phần mềm",
-    "postedDate": "2026-03-01",
+    "postedDate": "2026-01-15",
     "description": "FPT Software tìm kiếm Senior Frontend Developer có kinh nghiệm chuyên sâu về React và TypeScript để phát triển hệ thống nền tảng dịch vụ đám mây quy mô lớn cho đối tác toàn cầu.",
     "requirements": [
       "Có ít nhất 4 năm kinh nghiệm làm việc với ReactJS, TypeScript và hệ sinh thái liên quan",
@@ -28,27 +28,27 @@
   },
   {
     "id": 2,
-    "title": "Product Marketing Manager",
+    "title": "Thực tập sinh Marketing Online (Marketing Intern)",
     "company": "VNG Corporation",
     "location": "TP.HCM",
-    "salaryMin": 25000000,
-    "salaryMax": 38000000,
-    "jobType": "Full-time",
-    "level": "Middle",
+    "salaryMin": 4000000,
+    "salaryMax": 6500000,
+    "jobType": "Internship",
+    "level": "Intern",
     "category": "Marketing",
-    "postedDate": "2026-03-02",
-    "description": "Chịu trách nhiệm lập chiến lược định vị sản phẩm và chiến dịch Go-To-Market cho mảng ứng dụng giải trí số hàng đầu Việt Nam tại VNG Campus.",
+    "postedDate": "2026-02-03",
+    "description": "Hỗ trợ đội ngũ Product Marketing triển khai các chiến dịch truyền thông kỹ thuật số, nghiên cứu thị trường và đo lường tương tác người dùng trên các nền tảng mạng xã hội.",
     "requirements": [
-      "Từ 3 năm kinh nghiệm trong lĩnh vực Product Marketing ngành Công nghệ hoặc Game",
-      "Khả năng nghiên cứu thị trường, phân tích hành vi người dùng bằng dữ liệu",
-      "Tư duy sáng tạo, khả năng điều phối chiến dịch đa kênh linh hoạt",
-      "Tốt nghiệp Đại học chuyên ngành Marketing, Kinh tế hoặc liên quan"
+      "Sinh viên năm 3, năm cuối chuyên ngành Marketing, Kinh tế hoặc Truyền thông",
+      "Có kỹ năng viết bài tốt, tư duy sáng tạo và bắt kịp xu hướng thị trường",
+      "Biết sử dụng cơ bản công cụ thiết kế Canva, Photoshop là một lợi thế",
+      "Có thể làm việc tối thiểu 4 ngày/tuần tại văn phòng VNG Campus"
     ],
     "benefits": [
-      "Môi trường làm việc chuẩn quốc tế tại VNG Campus quận 7",
-      "Cơm trưa và đồ uống miễn phí tại văn phòng",
-      "Thưởng hiệu quả công việc và ESOP theo lộ trình",
-      "Bảo hiểm sức khỏe toàn diện và gói tập gym cao cấp"
+      "Phụ cấp thực tập hấp dẫn cùng cơ hội trở thành nhân viên chính thức",
+      "Cơm trưa và đồ uống miễn phí tại văn phòng hiện đại",
+      "Được trực tiếp hướng dẫn bởi các chuyên gia Marketing giàu kinh nghiệm",
+      "Chứng nhận hoàn thành kỳ thực tập tại tập đoàn công nghệ kỳ lân"
     ],
     "logo": "/logos/vng.svg",
     "logoAlt": "Logo tập đoàn VNG"
@@ -63,7 +63,7 @@
     "jobType": "Full-time",
     "level": "Middle",
     "category": "IT - Bảo mật",
-    "postedDate": "2026-03-03",
+    "postedDate": "2026-01-20",
     "description": "Vận hành hệ thống giám sát an toàn thông tin SOC, xử lý sự cố an ninh mạng và rà soát lỗ hổng bảo mật cho các hạ tầng trọng yếu quốc gia.",
     "requirements": [
       "Tối thiểu 2 năm kinh nghiệm trong lĩnh vực Security Operation Center hoặc SIEM",
@@ -84,17 +84,17 @@
     "id": 4,
     "title": "Chuyên viên Kế toán Tổng hợp",
     "company": "Vinamilk",
-    "location": "TP.HCM",
-    "salaryMin": 18000000,
-    "salaryMax": 26000000,
+    "location": "Cần Thơ",
+    "salaryMin": 16000000,
+    "salaryMax": 24000000,
     "jobType": "Full-time",
     "level": "Junior",
     "category": "Kế toán - Tài chính",
-    "postedDate": "2026-03-04",
-    "description": "Thực hiện hạch toán nghiệp vụ kế toán tổng hợp, đối chiếu số liệu và lập báo cáo tài chính định kỳ theo chuẩn mực kế toán Việt Nam (VAS).",
+    "postedDate": "2026-02-18",
+    "description": "Thực hiện hạch toán nghiệp vụ kế toán tổng hợp, đối chiếu số liệu và lập báo cáo tài chính định kỳ theo chuẩn mực kế toán Việt Nam (VAS) tại chi nhánh Tây Nam Bộ.",
     "requirements": [
       "Tốt nghiệp Đại học chuyên ngành Kế toán, Kiểm toán, Tài chính",
-      "Từ 2 năm kinh nghiệm ở vị trí kế toán tổng hợp tại doanh nghiệp sản xuất",
+      "Từ 1-2 năm kinh nghiệm ở vị trí kế toán tổng hợp",
       "Sử dụng thành thạo phần mềm ERP SAP và kỹ năng Excel nâng cao",
       "Cẩn thận, tỉ mỉ, trung thực và có trách nhiệm cao với số liệu"
     ],
@@ -109,27 +109,27 @@
   },
   {
     "id": 5,
-    "title": "Senior UI/UX Designer",
+    "title": "Senior UI/UX Designer (Làm việc từ xa)",
     "company": "Shopee Vietnam",
-    "location": "TP.HCM",
+    "location": "Remote",
     "salaryMin": 28000000,
     "salaryMax": 42000000,
-    "jobType": "Full-time",
+    "jobType": "Remote",
     "level": "Senior",
     "category": "Thiết kế",
     "postedDate": "2026-03-05",
-    "description": "Thiết kế trải nghiệm người dùng và giao diện cho các tính năng thương mại điện tử phục vụ hàng chục triệu người dùng Đông Nam Á.",
+    "description": "Thiết kế trải nghiệm người dùng và giao diện cho các tính năng thương mại điện tử phục vụ hàng chục triệu người dùng Đông Nam Á với chế độ làm việc từ xa toàn thời gian.",
     "requirements": [
       "Có từ 4 năm kinh nghiệm thiết kế UI/UX trên nền tảng Mobile App và Web",
       "Thành thạo công cụ Figma, Design Systems, Prototyping và Wireframing",
-      "Khả năng thực hiện User Research, Usability Testing và A/B testing",
-      "Portfolio thể hiện các sản phẩm quy mô lớn đã phát hành thực tế"
+      "Khả năng thực hiện User Research, Usability Testing và A/B testing độc lập",
+      "Kỹ năng tự quản lý công việc và giao tiếp tốt trong môi trường Remote"
     ],
     "benefits": [
       "Mức lương cạnh tranh và thưởng hiệu suất hằng quý",
-      "Môi trường làm việc trẻ trung, năng động tại tòa nhà hiện đại",
-      "Trang bị máy tính Macbook Pro cấu hình cao",
-      "Hoạt động Happy Hour, teambuilding và tiệc nội bộ sôi động"
+      "Làm việc từ xa 100% linh hoạt về địa điểm và thời gian",
+      "Hỗ trợ kinh phí thiết lập không gian làm việc tại nhà (Home Office)",
+      "Trang bị máy tính Macbook Pro cấu hình cao"
     ],
     "logo": "/logos/shopee.svg",
     "logoAlt": "Logo công ty Shopee Việt Nam"
@@ -144,7 +144,7 @@
     "jobType": "Full-time",
     "level": "Middle",
     "category": "IT - Phần mềm",
-    "postedDate": "2026-03-06",
+    "postedDate": "2026-02-25",
     "description": "Xây dựng và tối ưu hoá hệ thống vi dịch vụ (microservices) xử lý hàng triệu giao dịch thanh toán trực tuyến mỗi ngày với độ trễ thấp.",
     "requirements": [
       "Có ít nhất 3 năm kinh nghiệm với Golang hoặc Java Spring Boot",
@@ -163,54 +163,54 @@
   },
   {
     "id": 7,
-    "title": "Chuyên viên Quản trị Nhân sự (HRBP)",
+    "title": "Thực tập sinh Quản trị Nhân sự (HR Intern)",
     "company": "MB Bank",
     "location": "Hà Nội",
-    "salaryMin": 17000000,
-    "salaryMax": 25000000,
-    "jobType": "Full-time",
-    "level": "Junior",
+    "salaryMin": 3500000,
+    "salaryMax": 5500000,
+    "jobType": "Internship",
+    "level": "Intern",
     "category": "Nhân sự",
-    "postedDate": "2026-03-07",
-    "description": "Đồng hành cùng khối công nghệ thông tin trong việc hoạch định nguồn nhân lực, tuyển dụng nhân tài và xây dựng môi trường làm việc gắn kết.",
+    "postedDate": "2026-03-12",
+    "description": "Tham gia hỗ trợ công tác tuyển dụng nhân sự khối công nghệ, sắp xếp lịch phỏng vấn ứng viên và thực hiện các hoạt động gắn kết văn hóa doanh nghiệp.",
     "requirements": [
-      "Tối thiểu 2 năm kinh nghiệm nhân sự tổng hợp hoặc HRBP",
-      "Hiểu biết về Luật Lao động Việt Nam và các chế độ chính sách tiền lương",
-      "Kỹ năng lắng nghe, thấu cảm và giải quyết xung đột tốt",
-      "Tốt nghiệp Đại học chuyên ngành Quản trị Nhân lực, Luật hoặc Kinh tế"
+      "Sinh viên năm cuối chuyên ngành Quản trị nhân lực, Luật, Kinh tế hoặc Ngoại ngữ",
+      "Có kỹ năng giao tiếp tự tin, giọng nói chuẩn và tác phong lịch sự",
+      "Sử dụng tốt các ứng dụng tin học văn phòng Microsoft Word, Excel",
+      "Tinh thần ham học hỏi, cầu tiến và có trách nhiệm với công việc"
     ],
     "benefits": [
-      "Làm việc tại ngân hàng thương mại cổ phần hàng đầu Việt Nam",
-      "Ưu đãi vay vốn ngân hàng với lãi suất đặc quyền cho nhân viên",
-      "Được đào tạo theo khung năng lực chuẩn quốc tế của MB Academy",
-      "Đồng phục cao cấp và phụ cấp trang điểm hằng năm"
+      "Nhận phụ cấp thực tập hằng tháng và dấu mộc xác nhận luận văn",
+      "Trải nghiệm môi trường làm việc chuyên nghiệp tại ngân hàng số hàng đầu",
+      "Được hướng dẫn tận tình các nghiệp vụ nhân sự thực chiến",
+      "Cơ hội được tuyển dụng chính thức ngay sau khi tốt nghiệp"
     ],
     "logo": "/logos/mbbank.svg",
     "logoAlt": "Logo Ngân hàng Quân Đội MB Bank"
   },
   {
     "id": 8,
-    "title": "Data Analyst (Chuyên viên Phân tích Dữ liệu)",
+    "title": "Fresher Data Analyst (Chuyên viên Phân tích Dữ liệu mới tốt nghiệp)",
     "company": "Techcombank",
     "location": "Hà Nội",
-    "salaryMin": 22000000,
-    "salaryMax": 36000000,
+    "salaryMin": 10000000,
+    "salaryMax": 15000000,
     "jobType": "Full-time",
-    "level": "Middle",
+    "level": "Fresher",
     "category": "IT - Dữ liệu",
-    "postedDate": "2026-03-08",
-    "description": "Khai thác dữ liệu khách hàng, xây dựng bảng điều khiển trực quan hóa Dashboard và cung cấp insight chiến lược cho lãnh đạo khối Ngân hàng Bán lẻ.",
+    "postedDate": "2026-01-28",
+    "description": "Tham gia chương trình đào tạo Fresher Data Analyst, xây dựng báo cáo Dashboard quản trị và trích xuất dữ liệu phục vụ khối kinh doanh ngân hàng.",
     "requirements": [
-      "Có từ 2 năm kinh nghiệm phân tích dữ liệu kinh doanh",
-      "Thành thạo truy vấn SQL phức tạp và công cụ trực quan hoá Power BI / Tableau",
-      "Biết sử dụng Python hoặc R để xử lý và phân tích thống kê dữ liệu",
-      "Tư duy logic nhạy bén, khả năng kể chuyện qua dữ liệu (Data Storytelling)"
+      "Mới tốt nghiệp hoặc dưới 1 năm kinh nghiệm ngành Hệ thống thông tin, Toán tin, Khoa học dữ liệu",
+      "Nắm vững kiến thức truy vấn cơ sở dữ liệu SQL và công cụ Power BI / Tableau",
+      "Tư duy logic nhạy bén, yêu thích làm việc với các con số và dữ liệu lớn",
+      "Kỹ năng đọc hiểu tài liệu chuyên ngành tiếng Anh tương đương TOEIC 650+"
     ],
     "benefits": [
-      "Chính sách lương thưởng và đãi ngộ đứng đầu ngành ngân hàng",
-      "Cơ hội tiếp cận nguồn dữ liệu Big Data quy mô hàng đầu Việt Nam",
-      "Lộ trình thăng tiến rõ ràng, làm việc cùng các chuyên gia quốc tế",
-      "Gói bảo hiểm sức khỏe hạn mức cao cho bản thân và gia đình"
+      "Chương trình đào tạo chuyên sâu có hưởng lương trong 3 tháng đầu",
+      "Làm việc trực tiếp cùng các chuyên gia dữ liệu Big Data hàng đầu",
+      "Chính sách đãi ngộ hấp dẫn và cơ hội thăng tiến lên Junior sau 6 tháng",
+      "Gói bảo hiểm sức khỏe hạn mức cao cho bản thân"
     ],
     "logo": "/logos/techcombank.svg",
     "logoAlt": "Logo Ngân hàng TMCP Kỹ Thương Techcombank"
@@ -225,7 +225,7 @@
     "jobType": "Full-time",
     "level": "Middle",
     "category": "IT - Phần mềm",
-    "postedDate": "2026-03-09",
+    "postedDate": "2026-03-02",
     "description": "Thiết kế, xây dựng và quản trị hạ tầng CI/CD trên nền tảng đám mây AWS và cụm Kubernetes phục vụ hệ sinh thái Smart City và IoT.",
     "requirements": [
       "Tối thiểu 2 năm kinh nghiệm làm việc ở vai trò DevOps hoặc Cloud Engineer",
@@ -244,27 +244,27 @@
   },
   {
     "id": 10,
-    "title": "Content Marketing & Social Specialist",
+    "title": "Cộng tác viên Sáng tạo Nội dung Social (Part-time)",
     "company": "Tiki",
     "location": "TP.HCM",
-    "salaryMin": 14000000,
-    "salaryMax": 20000000,
-    "jobType": "Full-time",
+    "salaryMin": 5000000,
+    "salaryMax": 8000000,
+    "jobType": "Part-time",
     "level": "Junior",
     "category": "Marketing",
-    "postedDate": "2026-03-10",
-    "description": "Sáng tạo nội dung truyền thông cho các kênh mạng xã hội Facebook, TikTok, Instagram nhằm gia tăng độ nhận diện thương hiệu và tương tác khách hàng.",
+    "postedDate": "2026-02-10",
+    "description": "Sáng tạo nội dung truyền thông cho các kênh mạng xã hội Facebook, TikTok theo ca bán thời gian linh hoạt dành cho sinh viên và người đi làm.",
     "requirements": [
-      "Từ 1-2 năm kinh nghiệm sáng tạo nội dung số hoặc quản lý fanpage",
+      "Có kinh nghiệm sáng tạo nội dung số hoặc quản lý fanpage bán thời gian",
       "Bắt kịp xu hướng nhanh, kỹ năng viết bài cuốn hút và biến hóa đa dạng phong cách",
-      "Có khả năng quay chụp cơ bản và sử dụng công cụ Canva, CapCut",
-      "Tinh thần tích cực, sáng tạo, chịu được áp lực tiến độ nhanh"
+      "Có khả năng quay chụp cơ bản bằng điện thoại và sử dụng CapCut, Canva",
+      "Đảm bảo làm việc tối thiểu 20 giờ/tuần"
     ],
     "benefits": [
-      "Môi trường làm việc trẻ trung, cởi mở, khuyến khích sự đổi mới",
-      "Voucher mua sắm hàng tháng trên Tiki",
-      "Tham gia các workshop nâng cao năng lực viết và sản xuất video",
-      "Trợ cấp ăn trưa và gửi xe miễn phí tại toà nhà"
+      "Mức thù lao hấp dẫn trả theo giờ hoặc tháng kèm thưởng KPI bài viết",
+      "Thời gian làm việc linh hoạt, có thể làm việc tại nhà",
+      "Voucher mua sắm hàng tháng trên sàn thương mại Tiki",
+      "Môi trường trẻ trung, cởi mở, khuyến khích sáng tạo"
     ],
     "logo": "/logos/tiki.svg",
     "logoAlt": "Logo công ty thương mại điện tử Tiki"
@@ -279,7 +279,7 @@
     "jobType": "Full-time",
     "level": "Senior",
     "category": "IT - Phần mềm",
-    "postedDate": "2026-03-11",
+    "postedDate": "2026-03-18",
     "description": "Phát triển các module ứng dụng tin nhắn và dịch vụ công trên nền tảng Zalo Mini App và Mobile Native, đảm bảo tính mượt mà và bảo mật dữ liệu.",
     "requirements": [
       "Trên 3 năm kinh nghiệm lập trình ứng dụng di động với Flutter hoặc Swift/iOS",
@@ -300,14 +300,14 @@
     "id": 12,
     "title": "Chuyên viên Kế toán Thuế Doanh nghiệp",
     "company": "Masan Group",
-    "location": "TP.HCM",
-    "salaryMin": 19000000,
-    "salaryMax": 28000000,
+    "location": "Cần Thơ",
+    "salaryMin": 18000000,
+    "salaryMax": 26000000,
     "jobType": "Full-time",
     "level": "Middle",
     "category": "Kế toán - Tài chính",
-    "postedDate": "2026-03-12",
-    "description": "Lập tờ khai thuế GTGT, TNDN, TNCN; kiểm tra tính hợp pháp của hóa đơn chứng từ và trực tiếp làm việc với cơ quan thuế khi có thanh tra.",
+    "postedDate": "2026-01-10",
+    "description": "Lập tờ khai thuế GTGT, TNDN, TNCN; kiểm tra tính hợp pháp của hóa đơn chứng từ và trực tiếp làm việc với cơ quan thuế khi có thanh tra tại khu vực Đồng bằng Sông Cửu Long.",
     "requirements": [
       "Tối thiểu 3 năm kinh nghiệm làm việc về kế toán thuế tại doanh nghiệp lớn",
       "Nắm vững các luật thuế hiện hành, thông tư nghị định và các rủi ro về thuế",
@@ -333,7 +333,7 @@
     "jobType": "Full-time",
     "level": "Senior",
     "category": "IT - Quản lý",
-    "postedDate": "2026-03-13",
+    "postedDate": "2026-02-22",
     "description": "Quản lý vòng đời sản phẩm giải pháp thanh toán số, định hình Product Backlog, làm việc cùng đội ngũ kỹ thuật và khối kinh doanh để hiện thực hóa tầm nhìn sản phẩm.",
     "requirements": [
       "Từ 4 năm kinh nghiệm làm Product Owner hoặc Product Manager trong lĩnh vực Fintech",
@@ -352,27 +352,27 @@
   },
   {
     "id": 14,
-    "title": "QA / QC Automation Tester",
+    "title": "Fresher Automation Tester (Kiểm thử tự động)",
     "company": "VNPAY",
     "location": "Hà Nội",
-    "salaryMin": 18000000,
-    "salaryMax": 27000000,
+    "salaryMin": 9000000,
+    "salaryMax": 14000000,
     "jobType": "Full-time",
-    "level": "Junior",
+    "level": "Fresher",
     "category": "IT - Kiểm thử",
-    "postedDate": "2026-03-14",
-    "description": "Thiết kế kịch bản kiểm thử tự động cho hệ thống cổng thanh toán và ứng dụng ngân hàng di động, phát hiện và theo dõi xử lý lỗi phần mềm.",
+    "postedDate": "2026-03-08",
+    "description": "Tham gia kiểm thử tự động kịch bản API và giao diện cho các ứng dụng ngân hàng di động, được hướng dẫn phương pháp viết script kiểm thử tự động chuyên nghiệp.",
     "requirements": [
-      "Có từ 1.5 - 3 năm kinh nghiệm trong kiểm thử phần mềm tự động (Automation Test)",
-      "Thành thạo một trong các framework: Selenium, Playwright, Cypress hoặc Appium",
-      "Biết lập trình cơ bản với Java, JavaScript hoặc Python",
-      "Kỹ năng tư duy logic tốt, cẩn thận, chi tiết trong từng ca kiểm thử"
+      "Tốt nghiệp Đại học/Cao đẳng khối ngành CNTT, phần mềm hoặc liên quan",
+      "Hiểu biết nền tảng về quy trình kiểm thử phần mềm (Testing Lifecycle)",
+      "Biết lập trình cơ bản với Java hoặc JavaScript / Python",
+      "Tỉ mỉ, kiên nhẫn và có tư duy logic phản biện tốt"
     ],
     "benefits": [
       "Môi trường làm việc năng động, chuyên nghiệp trong lĩnh vực công nghệ thanh toán",
-      "Thưởng thành tích dự án, thưởng ngày lễ tết đều đặn",
+      "Được đào tạo bài bản từ đầu về Playwright, Selenium và Postman",
       "Hỗ trợ tiền ăn trưa, vé gửi xe và khám sức khỏe định kỳ",
-      "Được tài trợ các khóa đào tạo kiểm thử bảo mật nâng cao"
+      "Cơ hội ký hợp đồng chính thức dài hạn với lộ trình thăng tiến rõ ràng"
     ],
     "logo": "/logos/vnpay.svg",
     "logoAlt": "Logo công ty cổ phần giải pháp thanh toán VNPAY"
@@ -387,7 +387,7 @@
     "jobType": "Full-time",
     "level": "Junior",
     "category": "IT - Hạ tầng",
-    "postedDate": "2026-03-15",
+    "postedDate": "2026-01-08",
     "description": "Giám sát, cấu hình và bảo trì hệ thống định tuyến mạng lõi viễn thông khu vực miền Trung, đảm bảo dịch vụ Internet thông suốt 24/7.",
     "requirements": [
       "Tốt nghiệp Cao đẳng/Đại học chuyên ngành Điện tử viễn thông, Mạng máy tính",
@@ -406,27 +406,27 @@
   },
   {
     "id": 16,
-    "title": "Graphic Designer (Sáng tạo Hình ảnh Thương hiệu)",
+    "title": "Cộng tác viên Thiết kế đồ họa (Part-time Remote)",
     "company": "Sendo",
-    "location": "TP.HCM",
-    "salaryMin": 15000000,
-    "salaryMax": 22000000,
-    "jobType": "Full-time",
+    "location": "Remote",
+    "salaryMin": 6000000,
+    "salaryMax": 9000000,
+    "jobType": "Part-time",
     "level": "Junior",
     "category": "Thiết kế",
-    "postedDate": "2026-03-16",
-    "description": "Thiết kế banner quảng cáo, bộ nhận diện sự kiện siêu sale và hình ảnh truyền thông trên các nền tảng số của sàn thương mại điện tử Sendo.",
+    "postedDate": "2026-02-28",
+    "description": "Thiết kế banner sự kiện sale, hình ảnh sản phẩm và đồ họa truyền thông mạng xã hội theo dự án với hình thức làm việc từ xa bán thời gian linh hoạt.",
     "requirements": [
-      "Tối thiểu 2 năm kinh nghiệm thiết kế đồ họa trong lĩnh vực E-commerce hoặc Agency",
-      "Sử dụng thuần thục Adobe Photoshop, Illustrator; biết dựng video After Effects là điểm cộng",
-      "Gu thẩm mỹ hiện đại, nắm bắt nhanh phong cách thị giác của giới trẻ",
-      "Có tinh thần trách nhiệm cao và khả năng sắp xếp công việc đúng tiến độ"
+      "Tối thiểu 1 năm kinh nghiệm thiết kế đồ họa hoặc đã từng làm Freelance",
+      "Sử dụng thuần thục Adobe Photoshop, Illustrator",
+      "Có gu thẩm mỹ hiện đại, tư duy màu sắc tốt và chủ động trong công việc",
+      "Có máy tính cá nhân cấu hình đáp ứng tốt phần mềm đồ họa"
     ],
     "benefits": [
-      "Môi trường làm việc cởi mở, sáng tạo và nhiều thử thách thú vị",
-      "Hỗ trợ trang bị màn hình chuyên dụng chuẩn màu sắc",
-      "Các chế độ bảo hiểm xã hội, bảo hiểm y tế theo quy định nhà nước",
-      "Quà tặng nhân dịp sinh nhật và các ngày lễ trong năm"
+      "Làm việc từ xa hoàn toàn, tự do sắp xếp khung giờ làm việc",
+      "Thu nhập ổn định tính theo khối lượng sản phẩm thiết kế",
+      "Được hỗ trợ kho tài nguyên hình ảnh và font chữ bản quyền",
+      "Cơ hội hợp tác lâu dài với sàn thương mại điện tử lớn"
     ],
     "logo": "/logos/sendo.svg",
     "logoAlt": "Logo sàn thương mại điện tử Sendo"
@@ -441,7 +441,7 @@
     "jobType": "Full-time",
     "level": "Senior",
     "category": "Nhân sự",
-    "postedDate": "2026-03-17",
+    "postedDate": "2026-03-20",
     "description": "Dẫn dắt đội ngũ tuyển dụng thu hút nhân tài cho khối Kỹ thuật công nghệ và Vận hành nền tảng gọi xe công nghệ Be.",
     "requirements": [
       "Có từ 4 năm kinh nghiệm tuyển dụng, trong đó ít nhất 1 năm ở vai trò Team Lead",
@@ -468,7 +468,7 @@
     "jobType": "Full-time",
     "level": "Middle",
     "category": "IT - Phân tích",
-    "postedDate": "2026-03-18",
+    "postedDate": "2026-02-14",
     "description": "Thu thập, phân tích và mô hình hóa yêu cầu nghiệp vụ ngân hàng số, viết tài liệu đặc tả SRS và phối hợp cùng đội dev triển khai dự án.",
     "requirements": [
       "Có từ 2-4 năm kinh nghiệm ở vị trí BA trong lĩnh vực Tài chính, Ngân hàng hoặc Thanh toán",
@@ -487,27 +487,27 @@
   },
   {
     "id": 19,
-    "title": "Data Engineer (Kỹ sư Kỹ thuật Dữ liệu)",
+    "title": "Data Engineer (Kỹ sư Kỹ thuật Dữ liệu - Remote)",
     "company": "GHTK (Giao Hàng Tiết Kiệm)",
-    "location": "Hà Nội",
+    "location": "Remote",
     "salaryMin": 25000000,
     "salaryMax": 37000000,
-    "jobType": "Full-time",
+    "jobType": "Remote",
     "level": "Middle",
     "category": "IT - Dữ liệu",
-    "postedDate": "2026-03-19",
-    "description": "Thiết kế và tối ưu đường ống dữ liệu Data Pipeline xử lý luồng thông tin hàng triệu đơn hàng mỗi ngày từ mạng lưới bưu cục toàn quốc.",
+    "postedDate": "2026-01-22",
+    "description": "Thiết kế và tối ưu đường ống dữ liệu Data Pipeline xử lý luồng thông tin hàng triệu đơn hàng mỗi ngày từ mạng lưới bưu cục toàn quốc, làm việc theo cơ chế từ xa.",
     "requirements": [
       "Ít nhất 2 năm kinh nghiệm làm việc với cơ sở dữ liệu lớn (Big Data)",
       "Thành thạo Apache Spark, Apache Kafka, Airflow và ngôn ngữ Python hoặc Scala",
       "Hiểu biết sâu về thiết kế Data Warehouse và Data Lake",
-      "Khả năng chịu áp lực tốt khi xử lý sự cố dữ liệu theo thời gian thực"
+      "Khả năng làm việc độc lập và quản lý thời gian hiệu quả từ xa"
     ],
     "benefits": [
-      "Mức thu nhập hấp dẫn tại đơn vị logistics công nghệ hàng đầu",
-      "Môi trường kỹ thuật thực chiến giải quyết bài toán tải lớn ở Việt Nam",
+      "Làm việc Remote toàn thời gian, hỗ trợ trang thiết bị làm việc",
+      "Thu nhập hấp dẫn tại đơn vị logistics công nghệ hàng đầu",
       "Chế độ thưởng các dịp lễ, tết và ngày thành lập công ty",
-      "Bảo hiểm sức khỏe toàn diện và hoạt động văn hóa phong phú"
+      "Bảo hiểm sức khỏe toàn diện và phụ cấp kết nối mạng"
     ],
     "logo": "/logos/ghtk.svg",
     "logoAlt": "Logo công ty cổ phần Giao Hàng Tiết Kiệm"
@@ -522,8 +522,8 @@
     "jobType": "Full-time",
     "level": "Middle",
     "category": "Thiết kế",
-    "postedDate": "2026-03-20",
-    "description": "Mô hình hóa nhân vật và bối cảnh 3D cho các tựa game nổi tiếng toàn cầu trên nền tảng di động và máy console.",
+    "postedDate": "2026-03-15",
+    "description": "Mô hình hóa nhân vật và bối cảnh 3D cho các tựa game nổi tiếng toàn cầu trên nền tảng di động và máy console tại studio ven biển Đà Nẵng.",
     "requirements": [
       "Có từ 2 năm kinh nghiệm thiết kế 3D modeling và texturing cho game",
       "Sử dụng điêu luyện 3ds Max / Maya, ZBrush, Substance Painter và Photoshop",
@@ -541,27 +541,27 @@
   },
   {
     "id": 21,
-    "title": "Chuyên viên Tư vấn Chuyển đổi số Doanh nghiệp",
+    "title": "Thực tập sinh Tư vấn Chuyển đổi số (Intern SaaS Sales)",
     "company": "Base.vn",
-    "location": "TP.HCM",
-    "salaryMin": 15000000,
-    "salaryMax": 25000000,
-    "jobType": "Full-time",
-    "level": "Junior",
+    "location": "Cần Thơ",
+    "salaryMin": 3500000,
+    "salaryMax": 6000000,
+    "jobType": "Internship",
+    "level": "Intern",
     "category": "Kinh doanh - Tư vấn",
-    "postedDate": "2026-03-21",
-    "description": "Tiếp cận khách hàng doanh nghiệp vừa và nhỏ (SME), phân tích nỗi đau quản trị và tư vấn triển khai nền tảng phần mềm SaaS Base Platform.",
+    "postedDate": "2026-02-19",
+    "description": "Hỗ trợ chuyên viên tư vấn tiếp cận khách hàng doanh nghiệp tại khu vực Tây Nam Bộ, tìm hiểu nhu cầu và giới thiệu các ứng dụng quản trị trong hệ sinh thái Base Platform.",
     "requirements": [
-      "Tốt nghiệp Đại học khối ngành Kinh tế, Quản trị Kinh doanh hoặc CNTT",
-      "Từ 1 năm kinh nghiệm trong lĩnh vực B2B Sales phần mềm hoặc dịch vụ công nghệ",
-      "Kỹ năng thuyết phục khách hàng, khả năng thấu hiểu mô hình kinh doanh",
-      "Tác phong làm việc chuyên nghiệp, kiên trì và chịu được áp lực doanh số"
+      "Sinh viên năm cuối các khối ngành Kinh tế, Quản trị Kinh doanh hoặc CNTT",
+      "Giao tiếp hoạt ngôn, nhanh nhẹn, tự tin và có tinh thần trách nhiệm",
+      "Yêu thích lĩnh vực công nghệ thông tin và giải pháp phần mềm B2B",
+      "Có thể làm việc tối thiểu 4 buổi/tuần tại văn phòng Cần Thơ"
     ],
     "benefits": [
-      "Lương cứng ổn định cộng hoa hồng doanh số không giới hạn",
-      "Được đào tạo bài bản về kỹ năng bán hàng B2B và tư duy quản trị",
-      "Lộ trình thăng tiến thành Trưởng nhóm kinh doanh trong vòng 1 năm",
-      "Môi trường startup tăng trưởng vượt bậc với nhiều đồng nghiệp tài năng"
+      "Phụ cấp thực tập hàng tháng cùng hoa hồng hấp dẫn theo hợp đồng hỗ trợ",
+      "Được đào tạo bài bản về kỹ năng giao tiếp kinh doanh và tư duy quản trị",
+      "Môi trường startup công nghệ tăng trưởng mạnh, đồng nghiệp nhiệt tình",
+      "Cơ hội trở thành chuyên viên tư vấn chính thức ngay sau kỳ thực tập"
     ],
     "logo": "/logos/basevn.svg",
     "logoAlt": "Logo nền tảng quản trị doanh nghiệp Base.vn"
@@ -576,7 +576,7 @@
     "jobType": "Full-time",
     "level": "Junior",
     "category": "Nhân sự",
-    "postedDate": "2026-03-22",
+    "postedDate": "2026-01-05",
     "description": "Kết nối doanh nghiệp với ứng viên tài năng thông qua nền tảng tuyển dụng thông minh ứng dụng công nghệ trí tuệ nhân tạo (AI).",
     "requirements": [
       "Có ít nhất 1 năm kinh nghiệm làm Headhunter hoặc tuyển dụng nội bộ",

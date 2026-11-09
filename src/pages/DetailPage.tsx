@@ -27,6 +27,7 @@ export const DetailPage: React.FC = () => {
         }
       });
     } else {
+      setJob(null);
       setIsLoading(false);
     }
 
@@ -61,7 +62,7 @@ export const DetailPage: React.FC = () => {
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600"
+            className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-800 transition-colors focus:outline-none focus:ring-2 focus:ring-brand"
           >
             ← Quay lại danh sách việc làm
           </Link>
@@ -115,7 +116,7 @@ export const DetailPage: React.FC = () => {
                   {job.location}
                 </span>
                 <span>•</span>
-                <span>Ngày đăng: {job.postedDate}</span>
+                <span><span aria-hidden="true">📅</span> Đăng ngày: {job.postedDate}</span>
               </div>
             </div>
           </div>
@@ -132,7 +133,7 @@ export const DetailPage: React.FC = () => {
                   : `Lưu tin tuyển dụng ${job.title} tại ${job.company}`
               }
               aria-pressed={favorited}
-              className={`p-2.5 rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-600 ${
+              className={`p-2.5 rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-brand ${
                 favorited
                   ? 'bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100'
                   : 'bg-slate-50 border-slate-200 text-slate-500 hover:text-rose-600 hover:bg-slate-100'
@@ -157,7 +158,7 @@ export const DetailPage: React.FC = () => {
             <button
               type="button"
               onClick={() => setApplied(true)}
-              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600 ${
+              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand ${
                 applied
                   ? 'bg-slate-100 text-slate-600 border border-slate-300 cursor-default'
                   : 'bg-emerald-700 hover:bg-emerald-800 text-white shadow-sm'
